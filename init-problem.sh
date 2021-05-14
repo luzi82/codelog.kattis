@@ -9,9 +9,9 @@ PROBLEM_CODE=${1}
 
 MD5=`echo ${PROBLEM_CODE} | md5sum | awk '{ print $1 }'`
 
-MD5_0=${MD5:0:2}
-MD5_1=${MD5:2:2}
-MD5_2=${MD5:4:2}
+MD5_0=${MD5:0:1}
+MD5_1=${MD5:1:1}
+MD5_2=${MD5:2:2}
 
 # echo ${MD5}
 # echo ${MD5_0}
